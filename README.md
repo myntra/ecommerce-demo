@@ -46,7 +46,9 @@ This is an incremental project. You can proceed through the project by using git
 
 
 ## Screenshots
-<img src="https://assets.myntassets.com/assets/images/retaillabs/2018/7/17/23c9041f-3150-4a3b-a495-4a5e3051e74a1531770845357-v1.1.png" alt="Search TextInput" width="250px" height="" />  <img src="https://assets.myntassets.com/assets/images/retaillabs/2018/7/17/3baf86f6-6713-4b7c-a38f-53baf1deb7011531770845328-v1.5.png" alt="Search List" width="250px" height="" />   <img src="https://assets.myntassets.com/assets/images/retaillabs/2018/7/17/d10865c4-dcce-44e7-ab06-7f72ee36cf521531770845312-v1.6.png" alt="Product Display Page" width="250px" height="" />
+<img src="https://assets.myntassets.com/assets/images/retaillabs/2018/7/17/9545c760-302f-4f23-aaa0-2cdc434002981531772871909-input.png" alt="Search TextInput" width="300px" height="" />
+<img src="https://assets.myntassets.com/assets/images/retaillabs/2018/7/17/c225e9d9-7583-484e-9f3f-872d886a85621531772871895-pdp.png" alt="Search List" width="300px" height="" />
+<img src="https://assets.myntassets.com/assets/images/retaillabs/2018/7/17/231cf070-6a7d-479d-a928-849f0e92929e1531772871883-search.png" alt="Product Display Page" width="300px" height="" />
 
 
 ## Authors
