@@ -21,9 +21,10 @@ export default class Search extends Component {
 		this.fetchProducts();
     }
 
-    handlePress (styleId) {
-        // Handle product click
-        alert(styleId);
+    handlePress (productData) {
+        this.props.navigation.navigate('PDP', {
+            data: productData,
+        });
     }
 
     keyExtractor = (item) => item.styleid

@@ -3,6 +3,7 @@ import {StatusBar, Platform, View} from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import LandingPage from './src/apps/landingpage';
 import Search from './src/apps/search';
+import PDP from './src/apps/pdp';
 
 export default class App extends React.Component {
 	
@@ -19,16 +20,25 @@ const RootNavigator = createStackNavigator(
 	{
 		Home: {
 			screen: LandingPage,
-			navigationOptions: ({ navigation }) => ({
+			navigationOptions: () => ({
 				header: null,
 			}),
 		},
 		Search: {
 			screen: Search,
-			navigationOptions: ({ navigation }) => ({
+			navigationOptions: () => ({
 				title: 'Search',
 				headerStyle:{
-					marginTop: Platform.OS === 'ios' ? 0 : -StatusBar.currentHeight
+					marginTop: Platform.OS === 'ios' ? 0 : -StatusBar.currentHeight,
+				},
+			}),
+		},
+		PDP: {
+			screen: PDP,
+			navigationOptions: () => ({
+				title: 'PDP',
+				headerStyle:{
+					marginTop: Platform.OS === 'ios' ? 0 : -StatusBar.currentHeight,
 				},
 			}),
 		},
