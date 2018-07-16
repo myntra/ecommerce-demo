@@ -1,0 +1,56 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": ["warn", "always-multiline"],
+    "constructor-super": "error",
+    "jsx-quotes": "warn",
+    "linebreak-style": ["error", "unix"],
+    "no-class-assign": "error",
+    "no-const-assign": "error",
+    "no-console": "off",
+    "no-dupe-class-members": "error",
+    "no-this-before-super": "error",
+    "no-unused-vars": ["error", {"args": "none"}],
+    "no-var": "warn",
+    "prefer-spread": "warn",
+    "prefer-template": "warn",
+    "quotes": ["error", "single"],
+    "require-yield": "error",
+    "semi": "error",
+    "babel/arrow-parens": "warn",
+    "babel/generator-star-spacing": "warn",
+    "babel/object-shorthand": "warn",
+    "babel/no-await-in-loop": "warn",
+    "react/jsx-curly-spacing": "warn",
+    "react/jsx-max-props-per-line": ["warn", {"maximum": 3}],
+    "react/jsx-no-duplicate-props": "warn",
+    "react/jsx-no-undef": "warn",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-wrap-multilines": "warn",
+    "react/no-direct-mutation-state": "warn",
+    "react/prop-types": "warn",
+    "react/react-in-jsx-scope": "error",
+    "react/self-closing-comp": "warn",
+    "react/sort-comp": "warn"
+  },
+  "plugins": [
+    "babel",
+    "react"
+  ],
+  "globals": {
+      "__DEV__": true
+  }
+}
