@@ -8,7 +8,7 @@
     "react-navigation": "^2.6.2"
   },
   "devDependencies": {
-    "eslint": "^3.4.0",
+    "eslint": "^4.18.2",
     "eslint-config-react-native": "^1.6.0"
   }
 }
