@@ -8,7 +8,7 @@ Install node + npm & then Expo
 
 [Install npm](https://www.npmjs.com/get-npm)
 
-[Install Expo](https://docs.expo.io/versions/latest/)
+[Install Expo](https://docs.expo.io/)
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ These instructions will get you a copy of the app and running on your local mach
 - Open terminal, navigate to project directory & run following commands
 - *`npm i -g exp`* Install Expo if you haven't already
 - *`npm install`* Install dependencies
-- *`exp start`* Build Expo project & Run the bundler
+- *`expo start`* Build Expo project & Run the bundler
 - *`git checkout v1.0`* Checkout first version
 
 Post this, jump to [How to proceed](#how-to-proceed)
