@@ -27,18 +27,18 @@ export default class LandingPage extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Image source={{ uri: myntraLogo }} style={ styles.logo } />
+				<Image source={{ uri: myntraLogo }} style={styles.logo} />
 				<Text style={[styles.infoText, styles.medium]}>SEARCH PRODUCTS ON <Text style={styles.regular}>MYNTRA</Text></Text>
-				<View style={ styles.inputContainer }>
+				<View style={styles.inputContainer}>
 					<TextInput
-                        underlineColorAndroid={ 'transparent' }
-						style={ styles.input }
-						onChangeText={ text => this.setState({text}) }
-						value={ this.state.text }
+                        underlineColorAndroid={'transparent'}
+						style={styles.input}
+						onChangeText={(text) => this.setState({text})}
+						value={this.state.text}
 					/>
 				</View>
-				<TouchableWithoutFeedback onPress={ this.handleSearchPress }>
-					<View style={ styles.nextBtn }>
+				<TouchableWithoutFeedback onPress={this.handleSearchPress}>
+					<View style={styles.nextBtn}>
 						<Text style={styles.nextBtnText}>GO</Text>
 					</View>
 				</TouchableWithoutFeedback>
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
 	logo: {
         marginTop: 80,
 		width: 100,
-		height: 100
+		height: 100,
 	},
 	infoText: {
 		fontSize: 11,
