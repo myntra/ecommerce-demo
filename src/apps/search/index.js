@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import {
 	StyleSheet,
 	Text,
-	View,
+    View,
+    FlatList,
 } from 'react-native';
 import Product from '../../components/Product';
-import { FlatList } from '../../../node_modules/react-native-gesture-handler';
 
 export default class Search extends Component {
 
@@ -33,9 +33,12 @@ export default class Search extends Component {
         this.setState({
             loading: true,
         });
-        const { navigation } = this.props;
-        const query = navigation.getParam('query', '');
-        let url = `http://developer.myntra.com/search/data/${query}`;
+        // This is how you actually use query in a request, but Myntra APIs are behind a token
+        // Hence added a dummy JSON to JSONBin for now
+        // const { navigation } = this.props;
+        // const query = navigation.getParam('query', '');
+        // let url = `http://developer.myntra.com/search/data/${query}`;
+        const url = 'https://api.jsonbin.io/b/5efb732c7f16b71d48a8cd5d/1';
 
         // Networking using fetch  & async-await
         // Read more: https://facebook.github.io/react-native/docs/network.html
@@ -45,16 +48,16 @@ export default class Search extends Component {
         let responseJson = await response.json();
         this.setState({
             loading: false,
-            products: responseJson.data.results.products,
+            products: responseJson.products,
         });
     }
 
     renderItem ({ index, item }) {
 		return (
 			<Product
-				productData={ item }
-				position={ index }
-				handlePress={ this.handlePress }
+				productData={item}
+				position={index}
+				handlePress={this.handlePress}
 			/>
 		);
 	}
